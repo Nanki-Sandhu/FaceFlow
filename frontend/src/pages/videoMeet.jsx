@@ -11,8 +11,9 @@ import ScreenShareIcon from '@mui/icons-material/ScreenShare';
 import StopScreenShareIcon from '@mui/icons-material/StopScreenShare';
 import ChatIcon from '@mui/icons-material/Chat';
 import { Router, useNavigate } from "react-router-dom";
+import server from "../enviornment.js";
 //import { connection } from "mongoose";
-const server_url = "http://localhost:3001";
+const server_url = server;
 var connections = {};
 const peerConfigConnections = {
     "iceServers": [
